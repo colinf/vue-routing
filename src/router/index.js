@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import TeamList from '../components/TeamList.vue'
-import TeamDetail from '../components/TeamDetail.vue'
+import TeamDetailWrapper from '../components/TeamDetailWrapper.vue'
 import About from '../components/About.vue'
 import Home from '../components/Home.vue'
 import NotFoundComponent from '../components/NotFoundComponent.vue'
@@ -23,7 +23,7 @@ export default new Router({
       path: '/teams/:id',
       components: {
         default: TeamList,
-        detail: TeamDetail
+        detail: TeamDetailWrapper
       },
       props: {
         detail: true
