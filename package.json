@@ -1,9 +1,9 @@
 {
   "name": "vue-routing",
   "version": "1.0.0",
-  "description": "Sample vue.js project using vue-router",
+  "description": "A sample project to accompany a blog post about using the vuejs router",
   "author": "Colin Fallon <colinf@mac.com>",
-  "private": true,
+  "license": "BSD-3-Clause-Clear",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",

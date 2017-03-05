@@ -1,7 +1,7 @@
 <template>
   <div class="form-group">
-    <label :for="id" class="col-sm-2 control-label">{{ label }}</label>
-    <div class="col-sm-10">
+    <label :for="id" class="col-sm-3 control-label">{{ label }}</label>
+    <div class="col-sm-9">
       <input :id="id" class="form-control" :value="value" type="text" readonly />
     </div>
   </div>

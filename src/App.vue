@@ -2,18 +2,18 @@
   <div id="app">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-          <ul class="nav nav-pills nav-stacked">
+        <div class="col-xs-2 menu-pane">
+          <ul class="nav nav-stacked">
             <li><router-link :to="teamLink">Teams</router-link></li>
             <li><router-link to="/about">About</router-link></li>
           </ul>
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <div class="col-xs-10">
           <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-4">
               <router-view></router-view>
             </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="col-xs-8">
               <router-view name="detail"></router-view>
             </div>
           </div>
@@ -40,8 +40,18 @@
 
 <style>
 
+  #app {
+    margin-top: 10px;
+  }
+
   .router-link-active {
     background-color: #eeeeee;
+  }
+
+  .menu-pane {
+    background-color: #c0c0c0;
+    padding-top: 10px;
+    min-height: 600px;
   }
 
 </style>
