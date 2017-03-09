@@ -1,8 +1,8 @@
 <template>
-  <ul class='list-group'>
+  <div class='list-group'>
     <router-link v-for="team in teams" :to="`/teams/${team.id}`"
-                 class="list-group-item" tag="li">{{ team.name }}</router-link>
-  </ul>
+                 class="list-group-item">{{ team.name }}</router-link>
+  </div>
 </template>
 
 <script>

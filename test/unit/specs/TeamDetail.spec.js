@@ -20,7 +20,7 @@ function getVm (Component, propsData) {
 
 describe('TeamDetail.vue', () => {
   it('should render correct contents', () => {
-    expect(getVm(TeamDetail, {team: testTeam}).$el.childElementCount)
+    expect(getVm(TeamDetail, {team: testTeam, closeHandler: () => {}}).$el.querySelector('form').childElementCount)
       .to.equal(6)
   })
 })
